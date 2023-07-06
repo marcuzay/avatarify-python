@@ -1,0 +1,11 @@
+opencv-python>=4.2.0.34
+face-alignment==1.3.3
+pyzmq
+msgpack-numpy
+pyyaml
+requests
+pyfakewebcam
+zmq
+scipy
+pandas
+msgpack
