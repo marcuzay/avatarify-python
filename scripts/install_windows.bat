@@ -6,7 +6,7 @@ REM call git --version >nul 2>&1 && ( echo git found ) || ( echo git not found. 
 
 call scripts/settings_windows.bat
 
-call conda create -y -n %CONDA_ENV_NAME% python=3.10.12
+call conda create -y -n %CONDA_ENV_NAME% python=3.10
 call conda activate %CONDA_ENV_NAME%
 
 call mamba install pytorch torchvision torchaudio cudatoolkit=11.1 -c pytorch -c nvidia -c conda-forge
