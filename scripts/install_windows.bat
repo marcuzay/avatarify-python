@@ -13,6 +13,7 @@ call mamba install pytorch torchvision torchaudio cudatoolkit=11.1 -c pytorch -c
 call conda install -y scikit-image python-blosc -c conda-forge
 call conda install -y -c anaconda git
 call pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
+call conda install cudatoolkit=11.8
 
 REM ###FOMM###
 call rmdir fomm /s /q
