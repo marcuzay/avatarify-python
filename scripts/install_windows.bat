@@ -9,11 +9,11 @@ call scripts/settings_windows.bat
 call conda create -y -n %CONDA_ENV_NAME% python=3.10
 call conda activate %CONDA_ENV_NAME%
 
-call pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
 call mamba install pytorch torchvision torchaudio cudatoolkit=11.1 -c pytorch -c nvidia -c conda-forge
 call conda install -y scikit-image python-blosc -c conda-forge
 call conda install -y -c anaconda git
 call conda install cudatoolkit=11.8
+call pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
 
 REM ###FOMM###
 call rmdir fomm /s /q
